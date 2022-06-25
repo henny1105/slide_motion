@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "reset";
+
+#slider1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        margin-left: -100%;
+
+        li {
+            width: 100%;
+            height: 100%;
+            float: left;
+
+            &[data-index="1"] {
+                background: lightseagreen;
+            }
+
+            &[data-index="2"] {
+                background: #1a8f89;
+            }
+
+            &[data-index="3"] {
+                background: #0f5855;
+            }
+        }
+    }
+}
+
+.phone {
+    width: 450px;
+    height: 787px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/bgPhone.png);
+    border: 10px solid #000;
+
+    #slider2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            margin-left: -100%;
+
+            li {
+                width: 100%;
+                height: 100%;
+                float: left;
+
+                &[data-index="1"] {
+                    background: #bcffff;
+                }
+
+                &[data-index="2"] {
+                    background: #66a8a8;
+                }
+
+                 &[data-index="3"] {
+                    background: #244242;
+                }
+                
+            }
+        }
+    }
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-300px, -50%);
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(250px, -50%);
+}
+
+
+
